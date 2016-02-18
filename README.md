@@ -1,32 +1,30 @@
 
+#Comandos do Pandas
+
 ```python
 df_criado_com_hash = pd.DataFrame({'nome_da_col1':[1,2,3,4], 'nome_da_col2':['a','b', 'c', 'd']}) 
 ```
-criar um dataframe é simples. É só utilizar as chaves como nome das colunas e um array de valores como o valor da chave
+  Criar um dataframe é simples. É só utilizar as chaves como nome das colunas e um array de valores como o valor da chave
 
 ```python
 table_df = pd.read_table('path/da/tabela', delimiter='\t')  
 ```
-abrindo a tabela usando arquivo
+ Abrindo a tabela usando arquivo
 
 ```python
 table_df_sem_duas_ultimas_colunas =  table_df.iloc[:, 0:-2]      
 ```
- retirando  as duas ultimas colunas
+ Retirando  as duas ultimas colunas
 
 ```python
 table_df = table_df.iloc[np.random.permutation(len(table_df))]   
 ```
- fazendo um embaralhamento nos valores da tabela
+ Fazendo um embaralhamento nos valores da tabela
 
 ```python
 table_df.shape[1] 
 ```
- Retorna o numero de colunas 
-```
-1 ou linhas 
-```
-0
+ Retorna o numero de colunas (1 ou linhas 0)
 
 
 ```python
@@ -46,8 +44,8 @@ table_df['nova_coluna'] = 'valor default da nova coluna'
 ```
  cria uma nova coluna no df e adiciona o valor a todos os campos
 
-python
-```
+
+```python
 table_df['nova_coluna'] = [1,2,3,4,5]    
 ```
  Cria uma nova coluna e adiciona valores de um array com a mesma quantidade de linha que o dataframe

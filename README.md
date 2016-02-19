@@ -17,6 +17,11 @@ table_df_sem_duas_ultimas_colunas =  table_df.iloc[:, 0:-2]
  Retirando  as duas ultimas colunas
 
 ```python
+table.df.apply(lambda x:len([y for y in x if y>1]) ,axis=1)  
+```
+Passa a linha como entrada de uma funcãoe retorna quantos elementos são maiores do que 1.
+
+```python
 table_df = table_df.iloc[np.random.permutation(len(table_df))]   
 ```
  Fazendo um embaralhamento nos valores da tabela

@@ -99,7 +99,7 @@ pd.melt(pd.DataFrame({'a':{1,2,3,4}, 'b':{1,2,3,4}, 'c':{1,2,3,4}}))
 
 
 ```python
-pd.DataFrame.to_csv(table_df, 'tabela.txt' , sep='\t') 
+pd.DataFrame.to_csv(table_df, 'tabela.txt' , sep='\t', index=False) 
 ```
  salvando dataframe inteiro
 

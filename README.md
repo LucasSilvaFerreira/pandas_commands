@@ -81,6 +81,11 @@ np.array_split(table_df[['coluna1', 'coluna2', 'coluna3']], 10)
 
 
 ```python
+tabela_filtrada = tabela.query('idade < 20 and peso == 70')
+```
+Filtrando um Data Frame utilizando o comando query
+
+```python
 table_df[table_df['coluna_com_flag_desejada'].isin(['YES'])] 
 ```
  retorna apenas as colunas com 'YES' na coluna 'coluna_com_flag_desejada'

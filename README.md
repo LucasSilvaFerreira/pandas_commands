@@ -92,7 +92,7 @@ table_df[table_df['coluna_com_flag_desejada'].isin(['YES'])]
 
 
 ```python
-table_df['coluna_com_valores_desejados'].groupby(groups['coluna_com_flags_dos_grupos_diferentes'])  
+table_df['coluna_com_valores_desejados'].groupby([table_df['coluna_com_flags_dos_grupos_diferentes_1'], table_df['coluna_com_flags_dos_grupos_diferentes_2']])  
 ```
  retorna n arrays separados. sendo n o numero de possiveis flags dentro da coluna (nesse caso da coluna 'coluna_com_flags_dos_grupos_diferentes')
 

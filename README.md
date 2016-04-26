@@ -98,6 +98,14 @@ table_df['coluna_com_valores_desejados'].groupby([table_df['coluna_com_flags_dos
 
 
 ```python
+table_df.index = [for x in tabe_df["label_para_index"]]
+table_df.loc["row_desejada_com_label_indexada"]
+```
+Indexa os valores do DataFrame utilizando um array de labels.
+Dessa forma é possivel procurar com velocidade uma dada coluna com a label desejada.
+obs: indexe apenas com valores unicos o dataframe
+
+```python
 pd.melt(pd.DataFrame({'a':{1,2,3,4}, 'b':{1,2,3,4}, 'c':{1,2,3,4}})) 
 ```
  faz um melt na hash possibilitando o plot de multiplos graficos no ggplot

@@ -17,6 +17,11 @@ table_df_sem_duas_ultimas_colunas =  table_df.iloc[:, 0:-2]
  Retirando  as duas ultimas colunas
 
 ```python
+table_df["soma_coluna1_e_2"]=table_df.apply(lambda x: x["nome_coluna_1"] + x["nome_coluna_2"] ,axis=1)  
+```
+Criando uma nova coluna usando os valores da soma das duas primeiras colunas do df. 
+
+```python
 table.df.apply(lambda x:len([y for y in x if y>1]) ,axis=1)  
 ```
 Passa a linha como entrada de uma funcão e retorna quantos elementos são maiores do que 1.
